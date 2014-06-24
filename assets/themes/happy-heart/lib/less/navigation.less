@@ -4,8 +4,8 @@ Site Navigation
 
 .genesis-nav-menu {
   clear: both;
-  color: #999;
-  font-family: Lato, sans-serif;
+  color: @white;
+  .customsansserif;
   line-height: 1.5;
   width: 100%;
 }
@@ -17,10 +17,8 @@ Site Navigation
 
 .genesis-nav-menu a {
   border: none;
-  color: #999;
+  color: @white;
   display: block;
-  padding: 28px 24px;
-  padding: 2.8rem 2.4rem;
   position: relative;
 }
 
@@ -35,7 +33,6 @@ Site Navigation
 }
 
 .genesis-nav-menu > .menu-item > a {
-  text-transform: uppercase;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -52,8 +49,8 @@ Site Navigation
 }
 
 .genesis-nav-menu .sub-menu a {
-  background-color: #fff;
-  border: 1px solid #eee;
+  background-color: @white;
+  border: 1px solid @vltgrey;
   border-top: none;
   font-size: 14px;
   font-size: 1.4rem;
@@ -123,21 +120,152 @@ Site Navigation
 --------------------------------------------- */
 
 .nav-primary {
-  background-color: @white;
+  display: inline-block;
+  float: right;
+  clear: right;
+  margin-top: 50px;
+  font-size: 14px;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  ul{
+    margin-bottom: 0;
+    li.menu-item{
+      a{
+        text-transform: uppercase;
+        font-weight: 700;
+        color: @medgrey;
+        padding: 6px 20px;
+        padding: 0.6rem 2rem;
+      }
+      .sub-menu{
+          background-color: @ltpurple;
+        li.menu-item{
+          a{
+            text-transform: none;
+            font-size: 12px;
+            font-size: 1.2rem;
+            font-weight: 400;
+            background-color: @ltpurple;
+            border: none;
+          }
+          >.sub-menu{
+            background-color: @ltpurple;
+            position: relative;
+            display: block;
+            left: 0;
+            opacity: 1;
+            margin: 0;
+            li.menu-item{
+            background-color: @vltgrey;
+              a{
+                width: 190px;
+                margin-left: 1rem;
+                padding-left: 10px;
+                background-color: @vltgrey;
+                border-bottom: 1px solid @ltpurple;
+              }
+              a:before{
+                content:'\f0da ';
+                .fontawesome;
+                margin-right: 0.5rem;
+                color: darken(@ltpurple,10%);
+              }
+            }
+            li.menu-item.last-child{
+              a{
+                border-bottom: 0;
+              }
+            }
+            li:hover{
+              background-color: @purple;
+              a{
+                background-color: transparent;
+                border-bottom: 1px solid transparent;
+              }
+            }
+          }
+        }
+        li:hover{
+          >a:hover{
+            background-color: @purple;
+            color: @white;
+            text-decoration: none;
+            }
+        }
+      }
+    }
+    li:hover{
+      background-color: @ltpurple;
+      a, a:hover{
+        color:@dkgrey;
+        text-decoration: none;
+        }
+    }
+  }
 }
-
-.nav-primary a:hover,
-.nav-primary .current-menu-item > a {
-  color: @orange;
-}
-
-.nav-primary .sub-menu a:hover {
-  color: @orange;
+.mainNav>ul>li.first>ul>li.title>ul>li>ul>li {
+  padding: 3px 0;
 }
 
 /* Secondary Navigation
 --------------------------------------------- */
 
 .nav-secondary {
-  background-color: #fff;
+  padding: 0;
+  display: inline-block;
+  float: right;
+  margin-top: 1.6rem;
+  .wrap{
+    li.menu-item{
+      width:auto;
+      position: relative;
+      background: @dkgrey;
+      height: 30px;
+      margin-left: -0.4rem;
+      >a{
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.4rem;
+        padding: 0.7rem 4rem 0.7rem 1rem;
+        color: @white;
+        span{
+          color: @ltgrey;
+          margin-right: 1rem;
+        }
+      }
+      >a:hover{
+        color:@ltgrey;
+        text-decoration: none;
+      }
+      ul{
+        display: none;
+        position:absolute;
+        background:@ltgrey;
+        text-align: center;
+        left: 20px;
+        z-index: 500;
+        li{
+          border: 0;
+          display: block;
+          width: auto;
+          a{
+            border: 0;
+            color: @dkgrey;
+            width: auto;
+            padding: 0 0 0 20px;
+            background-position: left center;
+          }
+        }
+      }
+    }
+    li.menu-item.last-child{
+      border: 0;
+      background: @medgrey;
+    }
+    li:hover{
+      ul{
+        display: block;
+      }
+    }
+  }
 }

@@ -10,11 +10,11 @@ html {
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: @white;
   color: #666;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.625;
 }
@@ -36,12 +36,12 @@ textarea:focus,
 
 ::-moz-selection {
   background-color: #333;
-  color: #fff;
+  color: @white;
 }
 
 ::selection {
   background-color: #333;
-  color: #fff;
+  color: @white;
 }
 
 a {
@@ -56,6 +56,16 @@ a img {
 
 a:hover {
   color: #333;
+}
+
+/* Remove dotted outline from image inputs */
+input::-moz-focus-inner {
+  border: 0;
+}
+
+/* Remove dotted outline from all links */
+a, a:focus {
+ outline: 0;
 }
 
 p {
@@ -113,9 +123,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333;
-  font-family: Lato, sans-serif;
-  font-weight: 700;
+  .customsansserif;
+  font-weight: 400;
   line-height: 1.2;
   margin: 0 0 16px;
   margin: 0 0 1.6rem;
@@ -174,15 +183,13 @@ img {
 input,
 select,
 textarea {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  box-shadow: 1px 1px 3px #eee inset;
-  color: #999;
-  font-size: 14px;
-  font-size: 1.4rem;
-  padding: 16px;
-  padding: 1.6rem;
+  background-color: @white;
+  border: 1px solid @ltgrey;
+  color: @medgrey;
+  font-size: 12px;
+  font-size: 1.2rem;
+  padding: 6px;
+  padding: 0.6rem;
   width: 100%;
 }
 
@@ -207,15 +214,15 @@ input[type="reset"],
 input[type="submit"],
 .button,
 .entry-content .button {
-  background-color: #333;
+  background-color: @dkblue;
   border: none;
   box-shadow: none;
-  color: #fff;
+  color: @white;
   cursor: pointer;
-  padding: 16px 24px;
-  padding: 1.6rem 2.4rem;
+  padding: 6px 10px;
+  padding: 0.6rem 1rem;
   text-transform: uppercase;
-  width: auto;
+  width: 100%;
 }
 
 button:hover,
@@ -224,15 +231,14 @@ input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover,
 .entry-content .button:hover {
-  background-color: #f15123;
+  background-color: @dkgrey;
 }
 
 .entry-content .button:hover {
-  color: #fff;
+  color: @white;
 }
 
 .button {
-  border-radius: 3px;
   display: inline-block;
 }
 

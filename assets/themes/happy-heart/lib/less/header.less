@@ -3,7 +3,7 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-  background-color: #fff;
+  background-color: @white;
 }
 
 .site-header .wrap {
@@ -57,23 +57,34 @@ Site Header
   width: 100%;
 }
 
-.header-image .site-description,
 .header-image .site-title a {
   display: block;
   text-indent: -9999px;
 }
 
+.header-image .site-description{
+  display: block;
+  margin: 0 0 1rem;
+}
+
 /* Logo, hide text */
 
-.header-image .site-header .wrap {
-  background: url(images/logo.png) no-repeat left;
-  padding: 0;
+.header-image .site-header{ 
+  .wrap {
+    padding: 0;
+  }
+  .wrap:after{
+    .clear;
+  }
 }
 
 .header-image .site-title a {
+  background: url(../img/logo.png) no-repeat left;
   float: left;
-  min-height: 164px;
+  min-height: 80px;
+  margin: 10px;
   width: 100%;
+  background-size: contain;
 }
 
 /* Widget Area
@@ -82,12 +93,10 @@ Site Header
 .site-header .widget-area {
   float: right;
   text-align: right;
-  width: 800px;
 }
 
 .header-image .site-header .widget-area {
-  padding: 40px 0;
-  padding: 4rem 0;
+  padding: 0;
 }
 
 .site-header .search-form {

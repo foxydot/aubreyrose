@@ -76,15 +76,12 @@ function msdlab_page_banner(){
     if(is_page()) {
         $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'page_banner' );
         $background = $featured_image[0];
-        remove_action('genesis_entry_header', 'genesis_do_post_title');
+        $ret = '<section class="banner">
+            <div class="wrap" style="background-image:url('.$background.')">
+            </wrap>
+           </section>';
+        print $ret;
     }
-    $title = $title != ''?sprintf( '<h3>%s</h3>', apply_filters( 'genesis_post_title_text', $title ) ):'';
-    $ret = '<section class="banner">
-        <div class="wrap" style="background-image:url('.$background.')">
-            <h1 itemprop="headline" class="entry-title">'.get_the_title().'</h1>
-        </wrap>
-       </section>';
-    print $ret;
 }
 
 /*** NAV ***/
@@ -113,8 +110,8 @@ function msdlab_ro_layout_logic() {
         remove_action( 'genesis_after_content', 'genesis_get_sidebar' );
         remove_action( 'genesis_after_content_sidebar_wrap', 'genesis_get_sidebar_alt');
         // Add layout specific sidebars
-        add_action( 'genesis_before_content_sidebar_wrap', 'genesis_get_sidebar' );
-        add_action( 'genesis_after_content', 'genesis_get_sidebar_alt');
+        add_action( 'genesis_after_content_sidebar_wrap', 'genesis_get_sidebar_alt' );
+        add_action( 'genesis_before_content', 'genesis_get_sidebar');
     }
 }
 

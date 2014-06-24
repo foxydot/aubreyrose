@@ -3,43 +3,49 @@ Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-  background-color: #333;
-  color: #999;
+  background-color: @black;
+  color: @white;
   clear: both;
-  padding: 40px 0 16px;
-  padding: 4rem 0 1.6rem;
+  padding: 0 0 16px;
+  padding: 0 0 1.6rem;
+  .wrap:after{
+    .clear;
+  }
 }
 
 .footer-widgets-1,
-.footer-widgets-3 {
-  width: 350px;
+.footer-widgets-2 {
+  width: 33%;
+  margin-right: 3%;
 }
 
-.footer-widgets-2 {
-  width: 360px;
+.footer-widgets-3 {
+  width: 25%;
 }
 
 .footer-widgets-1 {
-  margin-right: 40px;
-  margin-right: 4rem;
+  margin-right: 6%;
 }
 
 .footer-widgets-1,
 .footer-widgets-2 {
+  margin-top: 40px;
+  margin-top: 4rem;
   float: left;
 }
 
 .footer-widgets-3 {
+  margin-top: 12px;
+  margin-top: 1.2rem;
   float: right;
 }
 
 .footer-widgets a {
-  border-bottom: 1px solid #666;
-  color: #999;
+  color: @dkblue;
 }
 
 .footer-widgets a:hover {
-  color: #ddd;
+  color: lighten(@dkblue, 10%);
 }
 
 .footer-widgets .widget {
@@ -48,7 +54,10 @@ Footer Widgets
 }
 
 .footer-widgets .widget-title {
-  color: #fff;
+  color: @white;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
 
 .footer-widgets li {
