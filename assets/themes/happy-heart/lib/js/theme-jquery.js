@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
 		}
 	});
 	// add target="_blank" to all *external* 
-    var internal_urls = Array('aubrey.adv','aubrey.msdlab2.com','aubreyrose.org','www.aubreyrose.org');
+    var internal_urls = Array('aubrey.adv','aubreyrose.msdlab2.com','aubreyrose.org','www.aubreyrose.org');
     $('a').attr('target',function(){
         var url = $(this).attr('href');
         var target = $(this).attr('target');
