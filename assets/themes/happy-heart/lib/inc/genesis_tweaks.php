@@ -48,11 +48,15 @@ add_filter( 'genesis_prev_link_text', 'msdlab_newer_link_text', 20);
 add_theme_support( 'genesis-footer-widgets', 1 ); //adds automatic footer widgets
 
 remove_action('genesis_footer','genesis_do_footer'); //replace the footer
-//add_action('genesis_footer','msdlab_do_social_footer');//with a msdsocial support one
+add_action('genesis_footer','msdlab_do_social_footer');//with a msdsocial support one
 
 /*** HOMEPAGE (BACKEND SUPPORT) ***/
-add_action('after_setup_theme','msdlab_add_homepage_hero_flex_sidebars'); //creates widget areas for a hero and flexible widget area
-//add_action('after_setup_theme','msdlab_add_homepage_callout_sidebars'); //creates a widget area for a callout bar, usually between the hero and the widget area
+add_action('after_setup_theme','msdlab_add_homepage_hero_sidebars'); //creates widget areas for a hero and flexible widget area
+add_action('after_setup_theme','msdlab_add_homepage_callout_sidebars'); //creates a widget area for a callout bar, usually between the hero and the widget area
+add_action('after_setup_theme','msdlab_add_homepage_content_sidebars'); //creates widget areas for a hero and flexible widget area
+add_action('after_setup_theme','msdlab_add_homepage_callout2_sidebars'); //creates a widget area for a callout bar, usually between the hero and the widget area
+add_action('after_setup_theme','msdlab_add_homepage_footer_sidebars'); //creates a widget area for a callout bar, usually between the hero and the widget area
+
 
 /*** SITEMAP ***/
 add_action('after_404','msdlab_sitemap');

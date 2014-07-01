@@ -16,3 +16,26 @@
  
 .my_meta_control h4
 { color:#999; font-size:1em; margin:15px 6px; text-transform:uppercase; }
+
+span.note{
+        display: block;
+        font-size: 0.9em;
+        font-style: italic;
+        color: #999999;
+    }
+    body{
+        background-color: transparent;
+    }
+    .odd .input-table {background: #F5F5F5;}
+    .input-table {padding: 6px 12px;cursor:move; }
+    .input-table .description{display:none}
+    .input-table li:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+    .input-table label{display:block;font-weight:bold;margin-right:1%;float:left;width:14%;text-align:right}
+    .input-table label span{display:inline;font-weight:normal}
+    .input-table span{color:#999;display:block}
+    .input-table .input{width:85%;float:left}
+    .input-table .input .half{width:48%;float:left}
+    .input-table textarea,.input-table input[type='text'],.input-table select{display:inline;margin-bottom:3px;width:100%}
+    .input-table .file input[type='text']{width: 80%;}
+    .input-table .mceIframeContainer{background:#fff}
+    .input-table h4{color:#999;font-size:1em;margin:15px 6px;text-transform:uppercase}

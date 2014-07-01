@@ -91,4 +91,5 @@ function msd_carousel_wrapper($slides,$params = array()){
         <a data-slide="next" href="#myCarousel_'.$id.'" class="right carousel-control">'.$navright.'</a>
     </div>
 </div>';
+    return $ret;
 }

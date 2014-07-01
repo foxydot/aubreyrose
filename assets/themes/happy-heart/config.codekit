@@ -1562,6 +1562,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/lib\/img\/logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9037,
+		"inputAbbreviatedPath": "\/lib\/img\/logo.png",
+		"outputAbbreviatedPath": "\/lib\/img\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/lib\/img\/logo@2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1788,6 +1799,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/lib\/js\/jquery.equal-height-columns.js",
 		"outputAbbreviatedPath": "\/lib\/js\/min\/jquery.equal-height-columns-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/lib\/js\/min\/theme-jquery-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/lib\/js\/min\/theme-jquery-ck.js",
+		"outputAbbreviatedPath": "\/lib\/js\/min\/min\/theme-jquery-ck-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -2262,15 +2284,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/lib\/template\/meta.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/lib\/template\/metabox-homepage.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/lib\/template\/metabox-homepage.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
