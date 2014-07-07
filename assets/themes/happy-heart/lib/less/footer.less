@@ -3,17 +3,32 @@ Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-  background-color: @black;
-  color: @medgrey;
-  font-size: 14px;
-  font-size: 1.4rem;
+  background-color: @purple;
+  color: @white;
+  font-size: 12px;
+  font-size: 1.2rem;
   text-align: left;
-}
-
-.site-footer a {
-  border-bottom: 1px solid #ddd;
-}
-
-.site-footer p {
-  margin-bottom: 0;
+  padding: 0.6rem 0;
+  .footer-left{
+    
+  }
+  .footer-right{
+    text-align: right;
+  }
+  .ftr-menu{
+    ul{
+      list-style: none outside none;
+      li{
+         list-style: none outside none;
+         display: inline-block;
+      }
+      li.separator{
+        padding: 0 0.4rem;
+      }
+    }
+  }
+  a,a:hover{
+    color: @white;
+  }
+  p{margin: 0;}
 }

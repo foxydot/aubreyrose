@@ -6689,17 +6689,32 @@ Footer Widgets
 Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
-  background-color: #000000;
-  color: #414141;
-  font-size: 14px;
-  font-size: 1.4rem;
+  background-color: #9f7097;
+  color: #ffffff;
+  font-size: 12px;
+  font-size: 1.2rem;
   text-align: left;
+  padding: 0.6rem 0;
 }
-.site-footer a {
-  border-bottom: 1px solid #ddd;
+.site-footer .footer-right {
+  text-align: right;
+}
+.site-footer .ftr-menu ul {
+  list-style: none outside none;
+}
+.site-footer .ftr-menu ul li {
+  list-style: none outside none;
+  display: inline-block;
+}
+.site-footer .ftr-menu ul li.separator {
+  padding: 0 0.4rem;
+}
+.site-footer a,
+.site-footer a:hover {
+  color: #ffffff;
 }
 .site-footer p {
-  margin-bottom: 0;
+  margin: 0;
 }
 .banner {
   background-color: #b4d9e2;
