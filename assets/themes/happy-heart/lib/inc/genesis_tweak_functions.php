@@ -25,7 +25,6 @@ function msdlab_pre_header(){
         </div>
     </div>';
 }
-
 function msdlab_header_right(){
     global $wp_registered_sidebars;
     if( ( isset( $wp_registered_sidebars['pre-header'] ) && is_active_sidebar( 'pre-header' ) )){
