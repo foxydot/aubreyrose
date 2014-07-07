@@ -1,2 +1,122 @@
 @import 'lesshat';
 @import 'mixins';
+
+#hp-top, #hp-callout-2{
+  background: @blue;
+}
+#hp-top{
+  display: block;
+  min-height: 300px;
+  .carousel{
+    margin: 0 auto;
+    width: 100%;
+    .item {
+      height: 399px;
+      .sd2-node-caption {
+        display: none;
+      }
+      .full-slide-link-hit-area{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .carousel-control{
+      font-size: 12.0rem;
+      width: 100px;
+      padding-top: 40px;      
+    }
+    .carousel-control:focus{
+      outline: none;
+    }
+    .carousel-control.right{
+      left: auto;
+      right: 0px;
+    }
+  }
+}
+#hp-callout{
+  background: @dkblue;
+  padding: 0.8rem 0;
+  .wrap{
+    .widget{
+      .opensans;
+      font-size: 24px;
+      font-size: 2.4rem;
+      font-weight: 400;
+      text-align: center;
+      color: lighten(@blue,5%);
+      text-transform: uppercase;
+      .readmore{
+        color: @white;
+        font-size: 12px;
+        font-size: 1.2rem;
+        margin-top: -0.6rem;
+      }
+    }
+  }
+}
+#hp-footer{
+  background: @ltpurple;
+}
+#hp-top, #hp-callout,#hp-callout-2,#hp-footer{
+  .wrap:after,.wrap:before{
+    .clear;
+  }
+}
+
+/* Responsive Design Custom Styles
+------------------------------------------------------------ */
+
+/* Smaller screens */
+
+@media only screen and (max-width: 1080px) {
+  #homepage-widgets{
+    div.row{
+      margin: 0;
+    }
+  }
+}
+@media only screen and (max-width: 1023px) {
+  /* Enter Your Custom Styles Here */ 
+  #hp-top{
+    min-height: 200px;
+    .wrap{
+    min-height: 200px;
+     .carousel .item {
+      height: 200px;
+    }
+  }
+  .carousel-control{
+    display: none;
+  }
+  }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+  /* Enter Your Custom Styles Here */ 
+  #hp-top{
+    min-height: 150px;
+    .wrap{
+    min-height: 150px;
+    .carousel .item {
+      height: 150px;
+    }  
+  }
+  }
+}
+
+
+@media only screen and (max-width : 479px) {  
+  /* Enter Your Custom Styles Here */ 
+  #hp-top{
+    display: none;
+  }
+} 
+
+@media only screen and (max-width : 319px) {  
+  /* Enter Your Custom Styles Here */ 
+}

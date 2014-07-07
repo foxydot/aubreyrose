@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Volkhov:400,400italic);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,500,800);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 /*
 HTML5 Reset
@@ -5525,13 +5524,13 @@ td.visible-print {
   font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
 }
 .customsansserif {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
 }
 .customserif {
   font-family: "Volkhov", "Georgia", serif;
 }
 .arial {
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 .fontawesome {
   font-family: FontAwesome;
@@ -5549,7 +5548,7 @@ td.visible-print {
 }
 .btn.btn-default {
   padding: 6px 24px;
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
   color: #FFFFFF !important;
   font-size: 12px;
   font-weight: 700;
@@ -5685,7 +5684,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 16px;
@@ -6186,7 +6185,7 @@ Site Navigation
 .genesis-nav-menu {
   clear: both;
   color: #ffffff;
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
   line-height: 1.5;
   width: 100%;
 }
