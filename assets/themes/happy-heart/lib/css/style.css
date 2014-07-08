@@ -5839,6 +5839,11 @@ Structure and Layout
 /* Column Widths and Positions
 --------------------------------------------- */
 /* Wrapping div for .content and .sidebar-primary */
+.content-sidebar-sidebar .content-sidebar-wrap,
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+  padding: 0;
+}
 .content-sidebar-sidebar .content-sidebar-wrap {
   float: left;
 }
@@ -5862,6 +5867,9 @@ Structure and Layout
 .sidebar-primary {
   float: left;
 }
+.sidebar-content-sidebar .sidebar-primary {
+  padding-left: 0;
+}
 .sidebar-content .sidebar-primary,
 .sidebar-sidebar-content .sidebar-primary {
   float: left;
@@ -5869,6 +5877,9 @@ Structure and Layout
 /* Secondary Sidebar */
 .sidebar-secondary {
   float: right;
+}
+.sidebar-content-sidebar .sidebar-secondary {
+  padding-left: 0;
 }
 .content-sidebar-sidebar .sidebar-secondary {
   float: right;
