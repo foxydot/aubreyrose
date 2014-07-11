@@ -174,20 +174,89 @@
   margin: 0;
 }
 #hp-footer {
-  background: #b38fad;
+  background: #b37bb1;
+  color: #ffffff;
+}
+#hp-footer a,
+#hp-footer a:hover {
+  color: #ffffff;
 }
 #hp-footer .widget-title {
   text-align: center;
   font-size: 2.8rem;
   text-transform: uppercase;
   font-weight: 300;
-  color: #dcccda;
+  color: #d5c3d5;
 }
 #hp-footer .connected-text {
   text-align: center;
   color: #ffffff;
   max-width: 75%;
   margin: 0 auto;
+}
+#hp-footer .connected-form input {
+  color: #ffffff;
+  background-color: #b37bb1;
+  border: 2px solid #c69bc4;
+  padding: 0.6rem;
+}
+#hp-footer .connected-form ::-webkit-input-placeholder {
+  color: #ffffff;
+}
+#hp-footer .connected-form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #ffffff;
+}
+#hp-footer .connected-form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ffffff;
+}
+#hp-footer .connected-form :-ms-input-placeholder {
+  color: #ffffff;
+}
+#hp-footer .connected-form input[type="submit"],
+#hp-footer .connected-form input[type="button"] {
+  background-color: #976895;
+  border: 0;
+  font-weight: 700;
+}
+#hp-footer .connected-form input[type="submit"]:hover,
+#hp-footer .connected-form input[type="button"]:hover {
+  background-color: #885e86;
+}
+#hp-footer .align-right {
+  text-align: right;
+}
+#hp-footer h3,
+#hp-footer h3.gform_title {
+  font-size: 2.0rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #d5c3d5;
+  margin: 10px 0 6px;
+}
+#hp-footer .connected-address span.msdsocial_street {
+  display: block;
+}
+#hp-footer .connected-social .social-media {
+  float: right;
+}
+#hp-footer .connected-social .social-media a.fa {
+  background: none;
+  border: 1px solid #d5c3d5;
+  color: #d5c3d5;
+  padding: 40px 10px 4px 10px;
+  margin: 10px;
+  width: 50px;
+  font-size: 3rem;
+}
+#hp-footer .connected-social .social-media a.fa.last-child {
+  margin-right: 0;
+}
+#hp-footer .connected-social .social-media a.fa:hover {
+  background: #1f96d3;
+  border-color: #1f96d3;
+  color: #ffffff;
 }
 #hp-top .wrap:after,
 #hp-callout .wrap:after,

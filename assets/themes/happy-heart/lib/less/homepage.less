@@ -131,6 +131,8 @@
 }
 #hp-footer{
   background: @ltpurple;
+  color: @white;
+  a,a:hover{color: @white;}
   .widget-title{
     text-align: center;
     font-size: 2.8rem;
@@ -143,6 +145,74 @@
     color:@white;
     max-width: 75%;
     margin: 0 auto;
+  }
+  .connected-form{
+    input{
+      color: @white;
+      background-color: @ltpurple;
+      border: 2px solid lighten(@ltpurple, 10%);
+      padding: 0.6rem;
+    }
+    ::-webkit-input-placeholder {
+   color: @white;
+    }
+    
+    :-moz-placeholder { /* Firefox 18- */
+       color: @white;  
+    }
+    
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: @white;  
+    }
+    
+    :-ms-input-placeholder {  
+       color: @white;  
+    }
+    input[type="submit"],input[type="button"]{
+      background-color: @purple;
+      border: 0;
+      font-weight: 700;
+    }
+    input[type="submit"]:hover,input[type="button"]:hover{
+      background-color: darken(@purple,5%);
+    }
+  }
+  .align-right{
+    text-align: right;
+  }
+  h3, h3.gform_title{
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: lighten(@purple, 30%);
+    margin: 10px 0 6px;
+  }
+  .connected-address{
+    span.msdsocial_street{
+      display: block;
+    }
+  }
+  .connected-social{
+    .social-media{
+      float: right;
+      a.fa{
+        background: none;
+        border: 1px solid lighten(@purple,30%);
+        color: lighten(@purple,30%);
+        padding: 40px 10px 4px 10px;
+        margin: 10px;
+        width: 50px;
+        font-size: 3rem;
+      }
+      a.fa.last-child{
+        margin-right: 0;
+      }
+      a.fa:hover{
+        background: @dkblue;
+        border-color: @dkblue;
+        color: @white;
+      }
+    }
   }
 }
 #hp-top, #hp-callout,#hp-callout-2,#hp-footer{

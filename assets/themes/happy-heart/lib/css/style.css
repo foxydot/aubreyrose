@@ -6325,18 +6325,18 @@ Site Navigation
   padding: 0.6rem 2rem;
 }
 .nav-primary ul li.menu-item .sub-menu {
-  background-color: #b38fad;
+  background-color: #b37bb1;
 }
 .nav-primary ul li.menu-item .sub-menu li.menu-item a {
   text-transform: none;
   font-size: 12px;
   font-size: 1.2rem;
   font-weight: 400;
-  background-color: #b38fad;
+  background-color: #b37bb1;
   border: none;
 }
 .nav-primary ul li.menu-item .sub-menu li.menu-item > .sub-menu {
-  background-color: #b38fad;
+  background-color: #b37bb1;
   position: relative;
   display: block;
   left: 0;
@@ -6351,31 +6351,31 @@ Site Navigation
   margin-left: 1rem;
   padding-left: 10px;
   background-color: #f0efeb;
-  border-bottom: 1px solid #b38fad;
+  border-bottom: 1px solid #b37bb1;
 }
 .nav-primary ul li.menu-item .sub-menu li.menu-item > .sub-menu li.menu-item a:before {
   content: '\f0da ';
   font-family: FontAwesome;
   margin-right: 0.5rem;
-  color: #9f7097;
+  color: #9f5c9d;
 }
 .nav-primary ul li.menu-item .sub-menu li.menu-item > .sub-menu li.menu-item.last-child a {
   border-bottom: 0;
 }
 .nav-primary ul li.menu-item .sub-menu li.menu-item > .sub-menu li:hover {
-  background-color: #9f7097;
+  background-color: #976895;
 }
 .nav-primary ul li.menu-item .sub-menu li.menu-item > .sub-menu li:hover a {
   background-color: transparent;
   border-bottom: 1px solid transparent;
 }
 .nav-primary ul li.menu-item .sub-menu li:hover > a:hover {
-  background-color: #9f7097;
+  background-color: #976895;
   color: #ffffff;
   text-decoration: none;
 }
 .nav-primary ul li:hover {
-  background-color: #b38fad;
+  background-color: #b37bb1;
 }
 .nav-primary ul li:hover a,
 .nav-primary ul li:hover a:hover {
@@ -6717,7 +6717,7 @@ Footer Widgets
 Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
-  background-color: #9f7097;
+  background-color: #976895;
   color: #ffffff;
   font-size: 12px;
   font-size: 1.2rem;
@@ -6795,21 +6795,21 @@ Site Footer
 .sidebar-primary .widget_advanced_menu .menu > li.current-menu-item li a a:hover,
 .sidebar-primary .widget_advanced_menu .menu > li.current-menu-ancestor li a a:hover {
   text-decoration: none;
-  color: #9f7097;
+  color: #976895;
 }
 .sidebar-primary .widget_advanced_menu .menu > li.current-menu-item li.current-menu-item a,
 .sidebar-primary .widget_advanced_menu .menu > li.current-menu-ancestor li.current-menu-item a,
 .sidebar-primary .widget_advanced_menu .menu > li.current-menu-item li:hover a,
 .sidebar-primary .widget_advanced_menu .menu > li.current-menu-ancestor li:hover a {
-  color: #9f7097;
+  color: #976895;
 }
 .sidebar-secondary .widget {
-  background-color: #9f7097;
-  border: 6px solid #be9eb8;
+  background-color: #976895;
+  border: 6px solid #b695b5;
   padding: 12px;
 }
 .sidebar-secondary .widget h4.widget-title {
-  color: #dcccda;
+  color: #d5c3d5;
   font-size: 2.4rem;
   font-size: 24px;
   margin-top: 0;
@@ -6820,7 +6820,7 @@ Site Footer
   padding-bottom: 0;
 }
 .sidebar-secondary .widget input[type='submit'] {
-  background-color: #65445f;
+  background-color: #5b3e59;
 }
 .sidebar-secondary .widget.green {
   background-color: #92bb3e;
