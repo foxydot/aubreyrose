@@ -107,7 +107,10 @@
   margin-top: -0.6rem;
 }
 #homepage-widgets .wrap {
-  padding: 1rem 0;
+  padding: 2rem 0;
+}
+#homepage-widgets .wrap .widget .height-wrapper {
+  min-height: 120px;
 }
 #homepage-widgets .wrap .widget .widget-title {
   margin-bottom: 0.4rem;

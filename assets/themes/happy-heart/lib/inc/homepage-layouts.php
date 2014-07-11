@@ -105,8 +105,10 @@ function msdlab_homepage_widgets(){
                 <a href="'.$features_metabox->get_the_value('url').'">
                     <div class="widget-text">
                         <img class="" src="'.$features_metabox->get_the_value('color_image').'" />
-                        <h4 class="widget-title">'.$features_metabox->get_the_value('title').'</h4>
-                        <div class="widget-content">'.apply_filters('the_content',$features_metabox->get_the_value('content')).'</div>
+                        <div class="height-wrapper">
+                            <h4 class="widget-title">'.$features_metabox->get_the_value('title').'</h4>
+                            <div class="widget-content">'.apply_filters('the_content',$features_metabox->get_the_value('content')).'</div>
+                        </div>
                         <div class="btn btn-default">'.strip_tags($features_metabox->get_the_value('button_text')).'</div>
                     </div>
                 </a>
