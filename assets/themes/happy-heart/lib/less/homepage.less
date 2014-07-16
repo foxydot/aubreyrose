@@ -12,8 +12,38 @@
     width: 100%;
     .item {
       height: 399px;
-      .sd2-node-caption {
-        display: none;
+      .sd2-content-wrapper{
+        margin: 0 auto;
+        width: 960px;
+        .sd2-node-caption{
+          width: 50%;
+          padding: 30px;
+          color: @white;
+          .sd2-slide-title{
+            a{
+              .customsansserif;
+              color: @white;
+              font-size: 4rem;
+              font-weight: 600;
+              line-height: 1;
+              text-transform: uppercase;
+            }
+            a:hover{
+              text-decoration: none;
+            }
+          }
+          .sd2-slide-text{
+            font-size: 2.4rem;
+            line-height: 1.2;
+            margin: 1rem 0;
+            .button{
+              display: inline;
+              padding: 0.6rem 2rem;
+              font-size: 1.8rem;
+              font-weight: 600;
+            }
+          }
+        }
       }
       .full-slide-link-hit-area{
         display: block;
@@ -23,12 +53,22 @@
       }
     }
     .carousel-control{
-      font-size: 12.0rem;
-      width: 100px;
-      padding-top: 40px;      
+      .fontawesome;
+      font-size: 5rem;
+      width: 5rem;
+      font-weight: 100; 
+      text-shadow: 0 0 0 rgba(0,0,0,0);
+      height: 5rem;
+      background: @dkblue;
+      opacity: 1;
+      top: 170px;
+      line-height: 1;
     }
     .carousel-control:focus{
       outline: none;
+    }
+    .carousel-control:hover{
+      color: @blue;
     }
     .carousel-control.right{
       left: auto;

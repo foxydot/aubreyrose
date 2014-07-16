@@ -5570,8 +5570,9 @@ td.visible-print {
   display: inline-block;
   border-radius: 0;
 }
-.btn.btn-default:hover {
-  background-color: #12577a;
+.btn.btn-default:hover,
+.button:hover {
+  background-color: #1c86bd;
 }
 /* Clears */
 .clear {

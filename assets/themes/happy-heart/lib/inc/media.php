@@ -65,7 +65,7 @@ function msd_bootstrap_carousel($atts){
     foreach($slides AS $slide){
         $active = $i==0?' active':'';
         $items .= '
-        <div style="background: url('.$slide['image'].') center top no-repeat #000000;background-size: cover;" class="item'.$active.'">
+        <div style="background: url('.$slide['image'].') center top no-repeat transparent;background-size: cover;" class="item'.$active.'">
            '.$slide['content'].'
         </div>';
         $i++;
@@ -76,8 +76,8 @@ function msd_bootstrap_carousel($atts){
 function msd_carousel_wrapper($slides,$params = array()){
     extract( array_merge( array(
     'id' => NULL,
-    'navleft' => '‹',
-    'navright' => '›',
+    'navleft' => '',
+    'navright' => '',
     'indicators' => FALSE
     ), $params ) );
     $ret = '
