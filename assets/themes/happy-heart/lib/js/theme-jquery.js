@@ -61,5 +61,7 @@ jQuery(document).ready(function($) {
             return '_blank';
         }
     });
-    //$('.gform_footer').append('.move-to-gform-footer');
+    $('.gform_footer').append(function(){
+        return $(this).parent().find('.gform_body .move-to-gform-footer');
+    });
 });
