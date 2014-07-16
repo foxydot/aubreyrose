@@ -257,13 +257,15 @@
   color: #ffffff;
 }
 #hp-footer .connected-form input[type="submit"],
-#hp-footer .connected-form input[type="button"] {
+#hp-footer .connected-form input[type="button"],
+#hp-footer .connected-form a.button {
   background-color: #976895;
   border: 0;
   font-weight: 700;
 }
 #hp-footer .connected-form input[type="submit"]:hover,
-#hp-footer .connected-form input[type="button"]:hover {
+#hp-footer .connected-form input[type="button"]:hover,
+#hp-footer .connected-form a.button:hover {
   background-color: #885e86;
 }
 #hp-footer .align-right {
