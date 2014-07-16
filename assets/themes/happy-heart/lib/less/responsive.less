@@ -1,4 +1,20 @@
 /*
+Responsive Nav 
+---------------------------------------------------------------------------------------------------- */
+
+.nav-responsive ul, 
+.nav-responsive li,
+.nav-responsive li a {  
+    box-sizing:border-box;  
+    -moz-box-sizing:border-box;  
+    -webkit-box-sizing:border-box;  
+}  
+  
+
+.nav-responsive a#pull, .subnav-responsive a#subpull, .mobile-only {  
+    display: none;  
+}
+/*
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
@@ -168,4 +184,111 @@ Media Queries
     width: 100%;
   }
 
+  .mobile-only {display: block;}
+  .nav-primary  {
+    float: none;
+    display: block;
+  }
+  .nav-responsive {
+    border-bottom: 0;
+    ul {
+      display: none;
+      height: auto;
+    }
+    a#pull {
+      display: inline-block;
+      width: 100%;
+      position: relative;
+      text-indent: 20px;
+      background: @purple;
+      min-height: 46px;
+      padding-top: 14px;
+      position: relative;
+      > strong {
+        color: #fff;
+        text-decoration: none;
+        text-shadow:1px 1px 1px rgba(0, 0, 0, 0.78);
+        font-size: 1.2rem;
+      }
+      ul#mobile_menu {
+        margin-top: 14px;
+        border-top: 1px solid @ltgrey;
+        li{
+          display: block;
+          list-style: none;
+          padding: 0;
+          a{
+            background: @purple;
+            color: @white;
+            display: block;
+            width: 100%;
+            padding: 0.5em;
+            border-bottom: 1px solid @ltgrey;
+            .toggle-switch{
+              right: 15px;
+              i{
+              }
+            }
+          }
+          a:hover{
+            background: @ltpurple;
+          }
+          .toggle-switch{
+            margin-right: 12px;
+            i{
+            }
+          }
+          ul.sub-menu {
+            margin-top: 0;
+            display: none;
+            position: relative;
+            top: 0;
+            left: 0;
+            background: none;
+            li {
+              display: block;
+              list-style: none;
+              a{
+                text-indent: 40px;
+              }
+              ul li{
+                a{
+                  text-indent: 60px;
+                }
+                ul li{
+                  a{
+                    text-indent: 80px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        li.current-menu-item{
+          a{
+          background: lighten(@blue, 15%);
+          }
+        }
+      }
+    }
+    a#pull:hover {
+      text-decoration: none;
+    }
+  } 
+  .nav-responsive a#pull:after {
+    content:"\f03A";
+    font-family: 'FontAwesome';
+    font-size: 2.2rem;
+    text-indent: 0;
+    color: @purple;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    .border-radius(4px);
+    background: @white;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }  
 }

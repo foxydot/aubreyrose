@@ -1463,57 +1463,13 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/lib\/img\/140613_aubrey_about_r1_c1.jpg": {
+	"\/lib\/img\/140613_aubrey_about.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 117963,
-		"inputAbbreviatedPath": "\/lib\/img\/140613_aubrey_about_r1_c1.jpg",
-		"outputAbbreviatedPath": "\/lib\/img\/140613_aubrey_about_r1_c1.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/lib\/img\/140613_aubrey_about_r2_c1.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4908,
-		"inputAbbreviatedPath": "\/lib\/img\/140613_aubrey_about_r2_c1.jpg",
-		"outputAbbreviatedPath": "\/lib\/img\/140613_aubrey_about_r2_c1.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/lib\/img\/140613_aubrey_about_r2_c2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 29397,
-		"inputAbbreviatedPath": "\/lib\/img\/140613_aubrey_about_r2_c2.jpg",
-		"outputAbbreviatedPath": "\/lib\/img\/140613_aubrey_about_r2_c2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/lib\/img\/140613_aubrey_about_r2_c3.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6083,
-		"inputAbbreviatedPath": "\/lib\/img\/140613_aubrey_about_r2_c3.jpg",
-		"outputAbbreviatedPath": "\/lib\/img\/140613_aubrey_about_r2_c3.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/lib\/img\/140613_aubrey_about_r3_c2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 154372,
-		"inputAbbreviatedPath": "\/lib\/img\/140613_aubrey_about_r3_c2.jpg",
-		"outputAbbreviatedPath": "\/lib\/img\/140613_aubrey_about_r3_c2.jpg",
+		"initialSize": 428599,
+		"inputAbbreviatedPath": "\/lib\/img\/140613_aubrey_about.jpg",
+		"outputAbbreviatedPath": "\/lib\/img\/140613_aubrey_about.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1778,6 +1734,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/lib\/inc\/subtitle-support.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/lib\/inc\/widgets.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/lib\/inc\/widgets.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
