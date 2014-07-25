@@ -216,7 +216,8 @@
   margin: 0;
 }
 #hp-footer {
-  background: #b37bb1;
+  background: #b37bb1 url(../img/skyline.png) no-repeat top center;
+  background-size: cover;
   color: #ffffff;
 }
 #hp-footer a,
