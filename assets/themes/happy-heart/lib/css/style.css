@@ -6060,6 +6060,12 @@ Widgets
 .featured-content .entry-title a {
   border: none;
 }
+.featured-content .alignleft {
+  margin: 0 2.4rem 2.4rem 0;
+}
+.featured-content .alignright {
+  margin: 0 0 2.4rem 2.4rem;
+}
 /*
 Plugins
 ---------------------------------------------------------------------------------------------------- */
@@ -6232,10 +6238,10 @@ Site Navigation
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: #333;
+  color: #d7d5c9;
 }
 .genesis-nav-menu .sub-menu .current-menu-item > a {
-  color: #999;
+  color: #ffffff;
 }
 .genesis-nav-menu .sub-menu {
   left: -9999px;
@@ -6320,10 +6326,10 @@ Site Navigation
 }
 .nav-primary ul li.menu-item a {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   color: #414141;
-  padding: 6px 20px;
-  padding: 0.6rem 2rem;
+  padding: 6px 14px;
+  padding: 0.6rem 1.4rem;
 }
 .nav-primary ul li.menu-item .sub-menu {
   background-color: #b37bb1;
