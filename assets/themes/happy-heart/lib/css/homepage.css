@@ -237,7 +237,8 @@
   max-width: 75%;
   margin: 0 auto;
 }
-#hp-footer .connected-form input {
+#hp-footer .connected-form input,
+#hp-footer .connected-form textarea {
   color: #ffffff;
   background-color: #b37bb1;
   border: 2px solid #c69bc4;
