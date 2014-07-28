@@ -64,4 +64,13 @@ jQuery(document).ready(function($) {
     $('.gform_footer').append(function(){
         return $(this).parent().find('.gform_body .move-to-gform-footer');
     });
+    
+    var formwrapper = $('.site-header .wrap .header-widget-area .gform_widget .gform_wrapper');
+    $('.site-header .wrap .header-widget-area .gform_widget .widget-title,.site-header .gform_widget .gform_post_footer .button,.site-header .gform_widget .gform_post_footer .button').click(function(){
+        if(!formwrapper.hasClass('open_form')){
+            formwrapper.addClass('open_form');
+        } else {
+            formwrapper.removeClass('open_form');
+        }
+    });
 });

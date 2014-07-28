@@ -6839,6 +6839,72 @@ Site Footer
 .sidebar-secondary .widget.green input[type='submit'] {
   background-color: #566e25;
 }
+.site-header .wrap .header-widget-area .gform_widget {
+  width: 240px;
+}
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .widget-title {
+  background: none repeat scroll 0 0 #b37bb1;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper {
+  background: #b37bb1;
+  padding: 0 1rem;
+  width: 240px;
+  display: block;
+  position: absolute;
+  z-index: 400;
+  margin: 0;
+}
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form {
+  font-size: 1.2rem;
+  margin-top: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 2s ease 0s;
+}
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form input,
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form textarea {
+  color: #ffffff;
+  background-color: #b37bb1;
+  border: 2px solid #c69bc4;
+  padding: 0.6rem;
+}
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form ::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #ffffff;
+}
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ffffff;
+}
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form :-ms-input-placeholder {
+  color: #ffffff;
+}
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form input[type="submit"],
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form input[type="button"],
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form a.button {
+  background-color: #976895;
+  border: 0;
+  font-weight: 700;
+}
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form input[type="submit"]:hover,
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form input[type="button"]:hover,
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form a.button:hover {
+  background-color: #885e86;
+}
+.site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper.open_form form {
+  height: auto;
+  max-height: 1000px;
+}
 /*
 Responsive Nav 
 ---------------------------------------------------------------------------------------------------- */

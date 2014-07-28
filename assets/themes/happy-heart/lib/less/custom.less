@@ -79,3 +79,76 @@
     }
   }
 }
+.site-header{
+  .wrap{
+    .header-widget-area{
+      .gform_widget{
+        width: 240px;
+        .widget-wrap{
+          .widget-title{
+            background: none repeat scroll 0 0 @ltpurple;
+            color: @white;
+            cursor: pointer;
+            font-size: 1.4rem;
+            margin: 0;
+            padding: 0.5rem;
+            text-align: center;
+            text-transform: uppercase;
+          }
+          .gform_wrapper{
+            background: @ltpurple;
+            padding: 0 1rem;
+            width: 240px;
+            display: block;
+            position: absolute;
+            z-index: 400;
+            margin: 0;
+            form{
+               font-size: 1.2rem;
+                margin-top: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 2s ease 0s;
+                
+                input, textarea{
+                  color: @white;
+                  background-color: @ltpurple;
+                  border: 2px solid lighten(@ltpurple, 10%);
+                  padding: 0.6rem;
+                }
+                ::-webkit-input-placeholder {
+               color: @white;
+                }
+                
+                :-moz-placeholder { /* Firefox 18- */
+                   color: @white;  
+                }
+                
+                ::-moz-placeholder {  /* Firefox 19+ */
+                   color: @white;  
+                }
+                
+                :-ms-input-placeholder {  
+                   color: @white;  
+                }
+                input[type="submit"],input[type="button"],a.button{
+                  background-color: @purple;
+                  border: 0;
+                  font-weight: 700;
+                }
+                input[type="submit"]:hover,input[type="button"]:hover,a.button:hover{
+                  background-color: darken(@purple,5%);
+                }
+            }
+          }
+          .gform_wrapper.open_form{
+             form{
+               height: auto;
+               max-height: 1000px;
+             }
+           }
+        }
+      }
+    }
+  }
+}
