@@ -6839,6 +6839,38 @@ Site Footer
 .sidebar-secondary .widget.green input[type='submit'] {
   background-color: #566e25;
 }
+.sidebar-secondary .widget.widget_product {
+  color: #ffffff;
+}
+.sidebar-secondary .widget.widget_product img,
+.sidebar-secondary .widget.widget_product .product_meta,
+.sidebar-secondary .widget.widget_product .woocommerce-tabs {
+  display: none;
+}
+.sidebar-secondary .widget.widget_product .entry {
+  margin: 0;
+}
+.sidebar-secondary .widget.widget_product h1.product_title {
+  color: #d5c3d5;
+  font-size: 2.4rem;
+  font-size: 24px;
+  margin-top: 0;
+  display: none;
+}
+.sidebar-secondary .widget.widget_product input[type="submit"],
+.sidebar-secondary .widget.widget_product input[type="button"],
+.sidebar-secondary .widget.widget_product a.button,
+.sidebar-secondary .widget.widget_product button {
+  background-color: #885e86;
+  border: 0;
+  font-weight: 700;
+}
+.sidebar-secondary .widget.widget_product input[type="submit"]:hover,
+.sidebar-secondary .widget.widget_product input[type="button"]:hover,
+.sidebar-secondary .widget.widget_product a.button:hover,
+.sidebar-secondary .widget.widget_product button:hover {
+  background-color: #795377;
+}
 .site-header .wrap .header-widget-area .gform_widget {
   width: 240px;
 }
