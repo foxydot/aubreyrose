@@ -6328,8 +6328,8 @@ Site Navigation
   text-transform: uppercase;
   font-weight: 600;
   color: #414141;
-  padding: 6px 14px;
-  padding: 0.6rem 1.4rem;
+  padding: 6px 12px;
+  padding: 0.5rem 1.2rem;
 }
 .nav-primary ul li.menu-item .sub-menu {
   background-color: #b37bb1;
@@ -6376,7 +6376,7 @@ Site Navigation
   background-color: transparent;
   border-bottom: 1px solid transparent;
 }
-.nav-primary ul li.menu-item .sub-menu li:hover > a:hover {
+.nav-primary ul li.menu-item .sub-menu li:hover > a {
   background-color: #976895;
   color: #ffffff;
   text-decoration: none;
@@ -6388,6 +6388,23 @@ Site Navigation
 .nav-primary ul li:hover a:hover {
   color: #292929;
   text-decoration: none;
+}
+.nav-primary ul li.menu-item.cart {
+  border: 1px solid #976895;
+  border-radius: 100%;
+  height: 2.5rem;
+  width: 2.5rem;
+  line-height: 1;
+  padding: 0;
+  text-align: center;
+}
+.nav-primary ul li.menu-item.cart a {
+  color: #976895;
+  padding-left: 0;
+  padding-right: 0;
+}
+.nav-primary ul li.menu-item.cart:hover a {
+  color: #ffffff;
 }
 .mainNav > ul > li.first > ul > li.title > ul > li > ul > li {
   padding: 3px 0;
