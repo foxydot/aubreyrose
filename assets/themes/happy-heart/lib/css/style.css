@@ -6920,7 +6920,7 @@ Site Footer
 .site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form input,
 .site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form textarea {
   color: #ffffff;
-  background-color: #b37bb1;
+  background: #b37bb1;
   border: 2px solid #c69bc4;
   padding: 0.6rem;
 }
