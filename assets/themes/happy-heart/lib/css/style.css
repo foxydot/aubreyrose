@@ -6941,14 +6941,14 @@ Site Footer
 .site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form input[type="submit"],
 .site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form input[type="button"],
 .site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form a.button {
-  background-color: #976895;
+  background: #976895;
   border: 0;
   font-weight: 700;
 }
 .site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form input[type="submit"]:hover,
 .site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form input[type="button"]:hover,
 .site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper form a.button:hover {
-  background-color: #885e86;
+  background: #885e86;
 }
 .site-header .wrap .header-widget-area .gform_widget .widget-wrap .gform_wrapper.open_form form {
   height: auto;
