@@ -20,8 +20,8 @@ class MSD_Woo_Product_Widget extends WP_Widget{
 		global $woocommerce;
 		$title = apply_filters( 'widget_title', empty($instance['title']) ? '' : $instance['title'], $instance, $this->id_base);
 		$query_args = array(
-			'ID'			 => $instance['product_id'],
-    		'posts_per_page' => $number,
+			'p'			 => $instance['product_id'],
+    		'posts_per_page' => 1,
     		'post_status' 	 => 'publish',
     		'post_type' 	 => 'product',
     		'no_found_rows'  => 1,
@@ -54,7 +54,8 @@ class MSD_Woo_Product_Widget extends WP_Widget{
 	
 	function form( $instance ) {
 		$products = get_posts(array(
-			'post_type' => 'product'
+			'post_type' => 'product',
+			'posts_per_page' => -1
 		));
 		$instance = wp_parse_args( (array) $instance, array( 'title' => '', 'text' => '' ) );
 		$title = strip_tags($instance['title']);
