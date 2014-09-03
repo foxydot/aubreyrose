@@ -1,4 +1,13 @@
 <?php
+add_action('genesis_footer','msdlab_show_actions');
+function msdlab_show_actions(){
+    global $wp_filter;
+    $tag = $_GET['tag'];
+    if($tag){
+        ts_var( $wp_filter[$tag] );
+    }
+}
+
 /*
 * A useful troubleshooting function. Displays arrays in an easy to follow format in a textarea.
 */
