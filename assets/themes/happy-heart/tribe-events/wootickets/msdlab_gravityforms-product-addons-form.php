@@ -41,8 +41,8 @@ class msdlab_woocommerce_gravityforms_product_form {
 
         //Get the form meta so we can make sure the form exists.
         $form_meta = RGFormsModel::get_form_meta($this->form_id);
-        if (!empty($form_meta)) {
 
+        if (!empty($form_meta)) {
             if (!empty($_POST)) {
                 $_POST['gform_submit'] = isset($_POST['gform_old_submit']) ? $_POST['gform_old_submit'] : '';
                 $_POST['gform_old_submit'] = $_POST['gform_submit'];

@@ -3,10 +3,7 @@ global $woocommerce;
 ?>
 
 
-<form action="<?php echo esc_url( add_query_arg( 'wootickets_process', 1, $woocommerce->cart->get_cart_url() ) ); ?>"
-      class="cart" method="post"
-      enctype='multipart/form-data'>
-        <table width="100%" class="tribe-events-tickets">
+
             <?php
 
             $is_there_any_product         = false;
@@ -52,7 +49,7 @@ global $woocommerce;
                     if ( $product->is_in_stock() ) {
 
                         woocommerce_quantity_input( array( 'input_name'  => 'quantity_' . $ticket->ID,
-                                                           'input_value' => 0,
+                                                           'input_value' => isset($_POST['quantity_'.$ticket->ID])?$_POST['quantity_'.$ticket->ID]:0,
                                                            'min_value'   => 0,
                                                            'max_value'   => $product->backorders_allowed() ? '' : $product->get_stock_quantity(), ) );
 
@@ -81,8 +78,10 @@ global $woocommerce;
                     //if(do_form_for($product_id)){
                     if (is_array($gravity_form_data) && $gravity_form_data['id']) {
                         $do_javascript = true;
+                        $hidden = $_POST['quantity_'.$ticket->ID]>0?'':' hidden';
+                        $gform_id = $_POST['quantity_'.$ticket->ID]>0?$gravity_form_data['id']:'';
                         include_once( 'msdlab_gravityforms-product-addons-form.php' );
-                        echo "<tr class='woocommerce-gravityform hidden'>";
+                        echo "<tr class='woocommerce-gravityform".$hidden."'>";
                         echo "<td class='woocommerce' colspan='4'>";
                         $product_form = new msdlab_woocommerce_gravityforms_product_form($gravity_form_data['id'], $ticket->ID);
                         $product_form->get_form($gravity_form_data);                        
@@ -94,22 +93,34 @@ global $woocommerce;
             }
             $contents = ob_get_clean();
             if ( $is_there_any_product ) {
-                ?>
-                <h2 class="tribe-events-tickets-title"><?php _e( 'Tickets', 'tribe-wootickets' );?></h2>
-                <?php echo $contents; ?>
-                <?php if ( $is_there_any_product_to_sell ) { ?>
+                $my_content = '<h2 class="tribe-events-tickets-title">'._e( 'Tickets', 'tribe-wootickets' ).'</h2>
+                '.$contents;
+                if ( $is_there_any_product_to_sell ) {
+                    $my_content .= '
                     <tr>
-                        <td colspan="4" class='woocommerce'>
-
+                        <td colspan="4" class="woocommerce">
+                            <input type="hidden" id="gform_submit" name="gform_submit" value="'.$gform_id.'" />
                             <button type="submit"
-                                    class="button alt"><?php esc_html_e( 'Add to cart', 'tribe-wootickets' );?></button>
+                                    class="button alt">'.translate( 'Add to cart', 'tribe-wootickets' ).'</button>
                         </td>
-                    </tr>
-                    <?php
+                    </tr>';
                 }
             }
+            if($do_javascript){
+                $form_action = '';
+            } else {
+                $form_action = esc_url( add_query_arg( 'wootickets_process', 1, $woocommerce->cart->get_cart_url() ) );
+            }
+            
             ?>
-
+<form action="<?php echo $form_action; ?>"
+      class="cart" method="post"
+      enctype='multipart/form-data'>
+      <?php if($do_javascript){ ?>
+           <input type="hidden" name="my_form_action" value="<?php print esc_url( add_query_arg( 'wootickets_process', 1, $woocommerce->cart->get_cart_url() ) ); ?>" >
+      <?php } ?>
+        <table width="100%" class="tribe-events-tickets">
+            <?php echo $my_content; ?>
         </table>
 
 </form>
@@ -121,11 +132,11 @@ if($do_javascript){
                 var my_value = $(this).val();
                 if( my_value > 0){
                     $(this).parent().parent().parent().next(".woocommerce-gravityform").removeClass("hidden");
+                    $(".cart #gform_submit").val($(this).parent().parent().parent().next(".woocommerce-gravityform").find("#gform_form_id").val());
                 } else {
                     $(this).parent().parent().parent().next(".woocommerce-gravityform").addClass("hidden");
                 }
                 $(this).parent().parent().parent().next(".woocommerce-gravityform").find(".ticket-key input").val(my_value);
-                gf_apply_rules(4,[18,18]);
             });
         });
     </script>';

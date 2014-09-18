@@ -6,6 +6,7 @@ function msdlab_show_actions(){
     if($tag){
         ts_var( $wp_filter[$tag] );
     }
+    //ts_var($wp_filter['wp']);
 }
 
 /*
