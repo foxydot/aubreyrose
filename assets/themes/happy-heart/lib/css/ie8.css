@@ -1,0 +1,10 @@
+.header-image .site-title a {
+  background-image: url('../img/ie-logo.png');
+}
+.site-inner .wrap {
+  margin: 0 auto;
+}
+#hp-top .carousel .carousel-control {
+  background: transparent;
+  filter: none;
+}

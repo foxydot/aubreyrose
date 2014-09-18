@@ -26,7 +26,7 @@ function msdlab_add_styles() {
             wp_enqueue_style('ie-style',get_stylesheet_directory_uri().'/lib/css/ie.css',$queue);
             $queue[] = 'ie-style';
             
-            wp_enqueue_style('ie8-style',get_template_directory_uri() . '/lib/css/ie8.css');
+            wp_enqueue_style('ie8-style',get_stylesheet_directory_uri() . '/lib/css/ie8.css');
             global $wp_styles;
             $wp_styles->add_data( 'ie8-style', 'conditional', 'lte IE 8' );
         }    
@@ -48,6 +48,7 @@ function msdlab_add_scripts() {
             wp_enqueue_script('background-size',get_stylesheet_directory_uri().'/lib/js/jquery.backgroundSize.js',array('jquery'));
             wp_enqueue_script('shim','https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js',array('jquery'));
             wp_enqueue_script('media-queries','https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js',array('jquery'));
+            //wp_enqueue_script('css3pie',get_stylesheet_directory_uri().'/lib/js/PIE.js');
             wp_enqueue_script('ie-fixes',get_stylesheet_directory_uri().'/lib/js/ie-jquery.js',array('jquery'));
         }
         if(is_front_page()){

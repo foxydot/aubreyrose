@@ -77,7 +77,7 @@ function msdlab_page_banner(){
         $background = $featured_image[0];
         $ret = '<section class="banner">
             <div class="wrap" style="background-image:url('.$background.')">
-            </wrap>
+            </div>
            </section>';
         print $ret;
     }
