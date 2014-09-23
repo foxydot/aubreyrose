@@ -42,7 +42,7 @@ function msdlab_process_to_tickets($form, $page_number, $source_page_number){
 }
 
 
-function redirect_post($url, array $data)
+function tix_redirect_post($url, array $data)
 {
     ?>
     <html xmlns="http://www.w3.org/1999/xhtml">
