@@ -54,7 +54,7 @@
 }
 #hp-top,
 #hp-callout-2 {
-  background: #b4d9e2;
+  background: #90c3dd;
 }
 #hp-top {
   display: block;
@@ -120,7 +120,7 @@
   outline: none;
 }
 #hp-top .carousel .carousel-control:hover {
-  color: #b4d9e2;
+  color: #90c3dd;
 }
 #hp-top .carousel .carousel-control.right {
   left: auto;
@@ -136,7 +136,7 @@
   font-size: 2.4rem;
   font-weight: 400;
   text-align: center;
-  color: #c6e2e9;
+  color: #a4cee3;
   text-transform: uppercase;
 }
 #hp-callout .wrap .widget .readmore {

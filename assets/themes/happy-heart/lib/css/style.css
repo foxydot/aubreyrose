@@ -6769,7 +6769,7 @@ Site Footer
   margin: 0;
 }
 .banner {
-  background-color: #b4d9e2;
+  background-color: #90c3dd;
 }
 .banner .wrap {
   min-height: 360px;
@@ -7165,7 +7165,7 @@ Media Queries
     text-indent: 80px;
   }
   .nav-responsive a#pull ul#mobile_menu li.current-menu-item a {
-    background: #ebf5f7;
+    background: #cbe3ef;
   }
   .nav-responsive a#pull:hover {
     text-decoration: none;
