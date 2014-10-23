@@ -16,7 +16,7 @@ class MsdlabTribeWooTickets extends TribeWooTickets {
 
         if ( empty( $_GET['wootickets_process'] ) || intval( $_GET['wootickets_process'] ) !== 1 || empty( $_POST['product_id'] ) )
             return;
-
+        
         foreach ( (array) $_POST['product_id'] as $product_id ) {
             $quantity = isset( $_POST['quantity_' . $product_id] ) ? intval( $_POST['quantity_' . $product_id] ) : 0;
             

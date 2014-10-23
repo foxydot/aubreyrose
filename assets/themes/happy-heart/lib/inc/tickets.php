@@ -1,12 +1,21 @@
 <?php
 add_action('gform_post_process','msdlab_process_to_tickets', 1, 3);
 
+if(!isset($_GET['wootickets_process'])){
+    if(isset($_POST['gform_submit'])){
+        if(empty($_POST['gform_submit'])){
+            add_action('template_redirect','msdlab_process_to_tickets', 1, 3);
+        }
+    }
+}
 function msdlab_process_to_tickets($form, $page_number, $source_page_number){
-    $submission = GFFormDisplay::$submission;
     $is_valid = TRUE;
-    foreach($submission AS $sub){
-        if(!$sub['is_valid']){
-            $is_valid = FALSE;
+    if(class_exists('GFFormDisplay')){
+        $submission = GFFormDisplay::$submission;
+        foreach($submission AS $sub){
+            if(!$sub['is_valid']){
+                $is_valid = FALSE;
+            }
         }
     }
     if($is_valid && isset($_POST['my_form_action'])){
@@ -40,6 +49,8 @@ function msdlab_process_to_tickets($form, $page_number, $source_page_number){
     exit;
     }
 }
+
+
 
 
 function tix_redirect_post($url, array $data)
