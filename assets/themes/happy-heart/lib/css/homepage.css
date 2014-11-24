@@ -189,6 +189,7 @@
   width: 65%;
   clear: none;
   margin: 0;
+  position: relative;
 }
 #hp-callout-2 .gform_wrapper .gform_heading .gform_title,
 #hp-callout-2 .gform_wrapper .gform_body .gform_title {
@@ -197,6 +198,16 @@
   font-weight: 700;
   font-size: 1.6rem;
   color: #1f96d3;
+}
+#hp-callout-2 .gform_wrapper .gform_heading li.gfield,
+#hp-callout-2 .gform_wrapper .gform_body li.gfield {
+  display: inline-block;
+  width: 48%;
+  position: relative;
+}
+#hp-callout-2 .gform_wrapper .gform_heading li.gfield#field_2_1,
+#hp-callout-2 .gform_wrapper .gform_body li.gfield#field_2_1 {
+  top: -2.2rem;
 }
 #hp-callout-2 .gform_wrapper .gform_heading .ginput_container input,
 #hp-callout-2 .gform_wrapper .gform_body .ginput_container input {
@@ -216,6 +227,11 @@
   float: right;
   width: 33%;
   margin: 0;
+}
+#hp-callout-2 .gform_confirmation_wrapper {
+  color: white;
+  font-size: 1.6rem;
+  padding: 1.6rem;
 }
 #hp-footer {
   background: #b37bb1 url(../img/skyline.png) no-repeat top center;

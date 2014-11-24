@@ -144,12 +144,21 @@
       width: 65%;
       clear: none;
       margin: 0;
+      position: relative;
       .gform_title{
         margin-bottom: 0;
         text-transform: uppercase;
         font-weight: 700;
         font-size: 1.6rem;
         color: @dkblue;
+      }
+      li.gfield{
+        display: inline-block;
+        width: 48%;
+        position: relative;
+      }
+      li.gfield#field_2_1{
+        top: -2.2rem;
       }
       .ginput_container{
         input{
@@ -172,6 +181,11 @@
       width: 33%;
       margin: 0;
     }
+  }
+  .gform_confirmation_wrapper{
+    color: white;
+    font-size: 1.6rem;
+    padding: 1.6rem;
   }
 }
 #hp-footer{
