@@ -60,6 +60,7 @@ function msd_bootstrap_carousel($atts){
         'id' => NULL,
     ), $atts ) );
     $sd = $slidedeck->get($id);
+    $options = $sd['options'];
     $slides = $slidedeck->fetch_and_sort_slides( $sd );
     $i = 0;
     foreach($slides AS $slide){
@@ -70,7 +71,7 @@ function msd_bootstrap_carousel($atts){
         </div>';
         $i++;
     }
-    return msd_carousel_wrapper($items,array('id' => $id));
+    return msd_carousel_wrapper($items,array('id' => $id, 'options' => $options));
 }
 
 function msd_carousel_wrapper($slides,$params = array()){
@@ -78,10 +79,12 @@ function msd_carousel_wrapper($slides,$params = array()){
     'id' => NULL,
     'navleft' => '',
     'navright' => '',
-    'indicators' => FALSE
+    'indicators' => FALSE,
+    'options' => array('autoPlay' => TRUE, 'autoPlayInterval' => '5', 'cycle' => TRUE),
     ), $params ) );
+    $speed = $options['autoPlay']?$options['autoPlayInterval']*1000:FALSE;
     $ret = '
-<div class="carousel carousel-fade slide" id="myCarousel_'.$id.'">';
+<div class="carousel carousel-fade slide" id="myCarousel_'.$id.'" data-ride="carousel" data-interval="'.$speed.'" data-wrap="'.$options['cycle'].'">';
     if($indicators){
         $ret .= '<ol class="carousel-indicators">'.$indicators.'</ol>';
     }

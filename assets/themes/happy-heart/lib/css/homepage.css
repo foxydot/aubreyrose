@@ -232,6 +232,7 @@
   color: white;
   font-size: 1.6rem;
   padding: 1.6rem;
+  text-align: center;
 }
 #hp-footer {
   background: #b37bb1 url(../img/skyline.png) no-repeat top center;
