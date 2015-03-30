@@ -5,7 +5,7 @@
 class MSDConnected extends WP_Widget {
     /** constructor */
     function MSDConnected() {
-		$widget_ops = array('classname' => 'msd-connected', 'description' => __('Show social icons, addresses, and contact form'));
+		$widget_ops = array('classname' => 'msd-connected', 'description' => __('Show social icons'));
 		$control_ops = array('width' => 400, 'height' => 350);
 		$this->WP_Widget('connected', __('Connected'), $widget_ops, $control_ops);
 	}
@@ -16,13 +16,12 @@ class MSDConnected extends WP_Widget {
 		$title = apply_filters( 'widget_title', empty($instance['title']) ? '' : $instance['title'], $instance );
 		$text = apply_filters( 'widget_text', empty( $instance['text'] ) ? '' : $instance['text'], $instance );
 		echo $before_widget;
-		if ( !empty( $title ) ) { print $before_title.$title.$after_title; }
+		if ( !empty( $title ) ) { print $before_title.$title.$after_title; } 
         if ( !empty( $text )){ print '<div class="connected-text">'.$text.'</div>'; }
         if ( $form_id > 0 ){
             print '<div class="connected-form">';
-            print do_shortcode('[gravityform id="'.$form_id.'" title="false" description="false" ajax="true" tabindex="5000"]');
+            print do_shortcode('[gravityform id="'.$form_id.'" title="true" description="true" ajax="true" tabindex=1000]');
             print '</div>';
-            add_action( 'wp_footer', array(&$this,'tabindex_javascript'), 60);
         }
         
         if ( $address ){
@@ -132,23 +131,9 @@ class MSDConnected extends WP_Widget {
 
 <?php
 	}
-    function tabindex_javascript(){
-        echo '<script id="tabindex-js">jQuery(document).ready(function($) {
-             $(".connected-form input,.connected-form textarea").each(function(){
-                 if($(this).attr("tabindex")){
-                     var index = Number($(this).attr("tabindex"));
-                     var newindex = index + 5000;
-                     console.log(index);
-                     $(this).attr("tabindex",newindex);
-                 }
-             });
-        });</script>';
-    }
 }
 
-add_action('widgets_init', create_function('', 'return register_widget("MSDConnected");'));
- 
- /**
+add_action('widgets_init', create_function('', 'return register_widget("MSDConnected");'));/**
  * Connected Class
  */
 class MSDAddress extends WP_Widget {
