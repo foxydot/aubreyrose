@@ -177,13 +177,38 @@
 .site-inner .sidebar-secondary.row.col-md-4 .widget .textwidget .readmore {
   display: none;
 }
-#hp-callout-2 .widget-title {
-  display: none;
+#hp-top section.gform_widget,
+#hp-callout-2 section.gform_widget {
+  background: rgba(255, 255, 255, 0.2);
 }
+#hp-top section.gform_widget .widget-wrap,
+#hp-callout-2 section.gform_widget .widget-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+#hp-top section.gform_widget:before,
+#hp-callout-2 section.gform_widget:before,
+#hp-top section.gform_widget:after,
+#hp-callout-2 section.gform_widget:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#hp-top .widget-title,
+#hp-callout-2 .widget-title {
+  margin: 2rem 0 0 0;
+  text-transform: uppercase;
+}
+#hp-top .gform_wrapper,
 #hp-callout-2 .gform_wrapper {
   max-width: 100%;
+  margin-top: 0;
 }
+#hp-top .gform_wrapper .gform_heading,
 #hp-callout-2 .gform_wrapper .gform_heading,
+#hp-top .gform_wrapper .gform_body,
 #hp-callout-2 .gform_wrapper .gform_body {
   float: left;
   width: 65%;
@@ -191,7 +216,9 @@
   margin: 0;
   position: relative;
 }
+#hp-top .gform_wrapper .gform_heading .gform_title,
 #hp-callout-2 .gform_wrapper .gform_heading .gform_title,
+#hp-top .gform_wrapper .gform_body .gform_title,
 #hp-callout-2 .gform_wrapper .gform_body .gform_title {
   margin-bottom: 0;
   text-transform: uppercase;
@@ -199,21 +226,29 @@
   font-size: 1.6rem;
   color: #1f96d3;
 }
+#hp-top .gform_wrapper .gform_heading li.gfield,
 #hp-callout-2 .gform_wrapper .gform_heading li.gfield,
+#hp-top .gform_wrapper .gform_body li.gfield,
 #hp-callout-2 .gform_wrapper .gform_body li.gfield {
   display: inline-block;
   width: 48%;
   position: relative;
+  margin-top: 0;
 }
+#hp-top .gform_wrapper .gform_heading li.gfield#field_2_1,
 #hp-callout-2 .gform_wrapper .gform_heading li.gfield#field_2_1,
+#hp-top .gform_wrapper .gform_body li.gfield#field_2_1,
 #hp-callout-2 .gform_wrapper .gform_body li.gfield#field_2_1 {
   top: -2.2rem;
 }
+#hp-top .gform_wrapper .gform_heading .ginput_container input,
 #hp-callout-2 .gform_wrapper .gform_heading .ginput_container input,
+#hp-top .gform_wrapper .gform_body .ginput_container input,
 #hp-callout-2 .gform_wrapper .gform_body .ginput_container input {
   width: 98%;
   padding: 0.7rem;
 }
+#hp-top .gform_wrapper .gform_heading:before,
 #hp-callout-2 .gform_wrapper .gform_heading:before {
   content: '\f003';
   display: block;
@@ -222,12 +257,15 @@
   font-size: 4rem;
   margin: 0 1rem 0 0;
 }
+#hp-top .gform_wrapper .gform_footer,
 #hp-callout-2 .gform_wrapper .gform_footer {
   clear: none;
   float: right;
   width: 33%;
   margin: 0;
+  padding: 0;
 }
+#hp-top .gform_confirmation_wrapper,
 #hp-callout-2 .gform_confirmation_wrapper {
   color: white;
   font-size: 1.6rem;

@@ -133,12 +133,25 @@
     }
   }
 }
-#hp-callout-2{
+#hp-top,#hp-callout-2{
+  section.gform_widget{
+    background: fade(@white,20%);
+    .widget-wrap{
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    &:before,&:after{
+      .clear;
+    }
+  }
   .widget-title{
-    display: none;
+    //display: none;
+    margin: 2rem 0 0 0;
+    text-transform: uppercase;
   }
   .gform_wrapper{
     max-width: 100%;
+    margin-top: 0;
     .gform_heading,.gform_body{
       float:left;
       width: 65%;
@@ -156,6 +169,7 @@
         display: inline-block;
         width: 48%;
         position: relative;
+        margin-top: 0;
       }
       li.gfield#field_2_1{
         top: -2.2rem;
@@ -180,6 +194,7 @@
       float: right;
       width: 33%;
       margin: 0;
+      padding: 0;
     }
   }
   .gform_confirmation_wrapper{
