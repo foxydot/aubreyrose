@@ -8,7 +8,7 @@ if(!isset($_GET['wootickets_process'])){
         }
     }
 }
-function msdlab_process_to_tickets($form, $page_number, $source_page_number){
+function msdlab_process_to_tickets($form, $page_number = 1, $source_page_number = 1){
     $is_valid = TRUE;
     if(class_exists('GFFormDisplay')){
         $submission = GFFormDisplay::$submission;
