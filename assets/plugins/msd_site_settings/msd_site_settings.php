@@ -12,8 +12,7 @@ class MSDSocial{
 	private $the_path;
 	private $the_url;
 	public $icon_size;
-	function MSDSocial(){$this->__construct();}
-    function __construct(){
+	function MSDSocial(){
 		$this->the_path = plugin_dir_path(__FILE__);
 		$this->the_url = plugin_dir_url(__FILE__);
 		$this->icon_size = get_option('msdsocial_icon_size')?get_option('msdsocial_icon_size'):'0';

@@ -1,4 +1,5 @@
 <?php
+add_theme_support( 'woocommerce' );
 global $woocommerce,$woocommerce_gravityforms; 
 //add_filter('woocommerce_add_cart_item_data', 'msdlab_test', 10, 2);
 add_filter('woocommerce_add_cart_item_data', array($woocommerce_gravityforms, 'add_cart_item_data'), 10, 2);
@@ -10,6 +11,7 @@ function msdlab_test($cart_item_meta, $product_id){
     die();
 }
 
+if(class_exists('TribeWooTickets')){
 class MsdlabTribeWooTickets extends TribeWooTickets {
     public function process_front_end_tickets_form() {
         global $woocommerce;
@@ -26,4 +28,5 @@ class MsdlabTribeWooTickets extends TribeWooTickets {
                 $woocommerce->cart->add_to_cart( $product_id, $quantity );
         }
     }
+}
 }

@@ -4,7 +4,7 @@
  *
  * @author 		WooThemes / Sean Voss
  * @package 	Shatner/WooCommerce/Templates
- * @version     1.6.4 - Lolz
+ * @version 2.4.9
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
