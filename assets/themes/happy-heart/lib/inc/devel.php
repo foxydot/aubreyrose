@@ -1,5 +1,5 @@
 <?php
-add_action('genesis_footer','msdlab_show_actions');
+//add_action('genesis_footer','msdlab_show_actions');
 function msdlab_show_actions(){
     global $wp_filter;
     $tag = $_GET['tag'];
@@ -27,4 +27,9 @@ if(!function_exists('ts_var')){
 	function ts_var($var){
 		ts_data(var_export( $var , true ));
 	}
+}
+
+//add_action('after_setup_theme','msdlab_get_posted_data');
+function msdlab_get_posted_data(){
+    ts_data($_POST);
 }

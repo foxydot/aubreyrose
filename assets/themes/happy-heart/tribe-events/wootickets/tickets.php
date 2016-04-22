@@ -128,13 +128,20 @@ global $woocommerce;
 if($do_javascript){
     print '<script>
         jQuery(document).ready(function($) {
+            var forms = new Array;
+            $(".woocommerce-gravityform").each(function(){
+                var pid = $(this).prev("tr").find(".input-text.qty").attr("name");
+                forms[pid] = $(this).html();
+                $(this).html("");
+            });
             $(".woocommerce .quantity input.qty").change(function(){
                 var my_value = $(this).val();
+                var my_id = $(this).attr("name");
                 if( my_value > 0){
-                    $(this).parent().parent().parent().next(".woocommerce-gravityform").removeClass("hidden");
+                    $(this).parent().parent().parent().next(".woocommerce-gravityform").html(forms[my_id]).removeClass("hidden");
                     $(".cart #gform_submit").val($(this).parent().parent().parent().next(".woocommerce-gravityform").find("#gform_form_id").val());
                 } else {
-                    $(this).parent().parent().parent().next(".woocommerce-gravityform").addClass("hidden");
+                    $(this).parent().parent().parent().next(".woocommerce-gravityform").html("").addClass("hidden");
                 }
                 $(this).parent().parent().parent().next(".woocommerce-gravityform").find(".ticket-key input").val(my_value);
             });
